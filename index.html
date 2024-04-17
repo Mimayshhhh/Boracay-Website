@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+
+</head>
+<body>
+    
+    <div class="banner" id="home">
+
+        <div class="navbar">
+            <div class="logo">BORACAY</div>
+            <ul>
+                <li><a href="#home"> HOME </a></li>
+                <li><a href="#news"> NEWS </a></li>    
+                <li><a href="#about"> ABOUT US </a></li>    
+                <li><a href="#gallery"> GALLERY </a></li>    
+                <li><a href="#testimony"> TESTIMONY </a></li>    
+            </ul>
+        </div>
+
+
+        <div class="content">
+            <h1> WELCOME TO BORACAY </h1>
+            <p>  It remains as one of the best islands in the world </p>
+
+
+            <div class="buttons">
+                <button type="button"><span></span> READ MORE </button>
+                <button type="button"><span></span> WATCH MORE </button>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+
+<!--This code is for news.html-->
+
+<div class="blog-section" id="news">
+
+        <div class="section-content">
+
+            <div class="title">
+                <h2>BORACAY NEWS</h2>
+                <p> Events happening in Boracay Island </p>
+            </div>
+            <div class="cards">
+                <div class = "card">
+
+                <div class="image-section">
+                    <img src="img/borafirst.jpg">
+            </div>
+
+
+
+            <div class="article">
+                <h4> GOODBYE TO DIRTY REPUTATIONS </h4>
+                <p> The positive changes to Boracay since the shutdown of 2018 are clear to see. The island’s iconic White Beach is less bustling than it was before - gone are the elaborate commercial sandcastles, the fire-twirling shows and dining setups on the sand.
+                </p>
+            </div>
+
+            <div class="blog-view">
+                <a href="" class="button"> Read More</a>
+            </div>
+
+            <div class="posted-date">
+                <p> Date Posted: July 18, 2018</p>
+            </div>
+        </div>
+
+        <div class="card">
+
+            <div class="image-section">
+                <img src="img/borasecond.jpeg">
+            </div>
+
+
+            <div class="article">
+                <h4> Boracay Island: A Shimmering Jewel as Top 10 World’s Favorite Island </h4>
+                <p>Boracay Island, a globally adored gem of the Philippines, has once again made it to the World’s Top 10 Favorite Island list. As curated by the readers of the prestigious New York-based publication, Travel + Leisure magazine, this recognition reaffirms Boracay’s glowing reputation as a world-class vacation destination.
+                </p>
+            </div>
+
+            <div class="blog-view">
+                <a href="" class="button"> Read More </a>
+            </div>
+
+            <div class="posted-date">
+                <p> Date Posted: September 05, 2015</p>
+            </div>
+        </div>
+
+        <div class="card">
+
+            <div class="image-section">
+                <img src="img/borathird.jpg">
+            </div>
+
+
+            <div class="article">
+                <h4> Boracay is one of the ‘World’s Greatest Places of 2022,’ according to TIME </h4>
+                <p>MANILA, Philippines – The beautiful island of Boracay has been named as one of the World’s Greatest Places of 2022, according to the prestigious yearly list of international magazine TIME.
+
+                </p>
+            </div>
+
+            <div class="blog-view">
+                <a href="" class="button"> Read More </a>
+            </div>
+            
+            <div class="posted-date">
+                <p> Date Posted: July 14, 2022</p>
+            </div>
+        </div>
+
+
+        </div>
+    </div>
+</div>
+
+<!--for about us -->
+
+<div class="about-section" id="about">
+    <div class="heading">
+        <h1> ABOUT </h1>
+        <p> This page contains about history of Boracay</p>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="img/historypic.jpg">
+            </div>
+            <div class="about-content">
+            <h2> History of Boracay </h2>
+            <p>Before the Spanish colonization of the Philippines in the 16th century, Boracay was populated by Ati people. It was known to the Iberian conquerors as Buracay. At the time of contact with the Europeans, Buracay had a population of one hundred people, who cultivated rice on the island and augmented their income by raising goats. The Tumandok people also established an indigenous presence on the island, although the identities of the two indigenous peoples is often conflated.</p>
+
+            <a href="#" class="read-more"> Read More </a>
+
+        </div>
+    </section>
+</div>
+</div>
+
+</body>
+</html>
+
+<!--Gallery Page--->
+
+
+  <div class="gallery" id="gallery">
+
+    <input type="radio" name="photos" id="check1" checked> 
+    <input type="radio" name="photos" id="check2"> 
+    <input type="radio" name="photos" id="check3"> 
+    <input type="radio" name="photos" id="check4">
+
+<div class="gallery-container"> 
+     <h1> GALLERY </h1>
+    <div class="top-content">
+        <h3> Photo Gallery </h3>
+        <label for="check1"> All Photos</label> 
+        <label for="check2"> Hotel Photos</label> 
+        <label for="check3"> Bar Photos</label> 
+        <label for="check4"> Station Photos</label> 
+    </div>
+
+<div class="photo-gallery">
+
+    <div class="pic Hotel"> 
+        <img src="img/hotel1.jpg">
+    </div>
+
+    <div class="pic Bar"> 
+        <img src="img/bar1.jpg"> 
+    </div>
+
+    <div class="pic Station">
+        <img src="img/sta1.jpg"> 
+    </div>
+
+    <div class="pic Hotel"> 
+        <img src="img/hotel2.jpg"> 
+    </div>
+
+
+    <div class="pic Bar"> 
+        <img src="img/bar2.jpg"> 
+    </div>
+
+
+    <div class="pic Station">
+        <img src="img/sta2.jpg"> 
+    </div>
+
+    <div class="pic Hotel">
+        <img src="img/hotel3.jpg">
+    </div>
+
+    <div class="pic Bar"> 
+        <img src="img/bar3.jpg"> 
+    </div>
+
+    <div class="pic Station">
+        <img src="img/sta3.jpg">
+    </div>
+
+    <div class="pic Hotel">
+        <img src="img/hotel4.jpg">
+    </div>
+
+    <div class="pic Bar">
+        <img src="img/bar4.jpg"> 
+    </div>
+
+    <div class="pic Station">
+        <img src="img/sta4.jpg">
+    </div>
+</div>
+</div>
+</div>
+
+
+<!--This code is for testimony--->
+
+  <div class="testimonials" id="testimony">
+    <div class="testimonial-inner">
+      <h1> TESTIMONY </h1>
+      <div class="border"></div>
+      
+      <div class="row">
+        <div class="col">
+          <div class="testimonial">
+            <img src="img/jasebel.jpg" alt="">
+            <div class="name"> Jasebel Operia </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>Boracay is a beautiful island. The beach is spectacular. One could walk for miles on foot even without shoes! Well, because the sand is fine and not as sharp as in Potipot or Guimaras. The view is spectacular. I could not get tired of it.</p>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="testimonial">
+            <img src="img/harina.jpg" alt="">
+            <div class="name"> Harina Pacheja </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p>One thing I don't particularly enjoy, though, is that it is overcrowded already. We went to Boracay last November, thinking that it was off-peak season and we realized that there doesn't seem to be an off-peak season for Boracay anymore.</p>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="testimonial">
+            <img src="img/karena.jpg" alt="">
+            <div class="name"> Karena Gaytana </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>Walking on the white sand beaches of Boracay made us want to stay there. Boracay is popular for showcasing one of the best types of white sand in the entire world. Phuket may have its own sandy beaches, but the white sands of Boracay make the water look more pristine.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--My Footer-->
+
+  <div class="footer-basic">
+    <footer>
+        <div class="social">
+            <a href="#"><i class="fa fa-facebook-official"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+        </div>
+        <p class="copyright"> Manage and Created by Mima @2023</p>
+    </footer>
+</div>
+
+<a href="#home" id="myBtn" title="Go to top">TOP</a>
+
+<script>
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function(){scrollFunction()};
+    function scrollFunction(){
+        if(document.body.scrollTop>20||document.documentElement.scrollTop>20){
+            mybutton.style.display="block";
+        } else{
+            mybutton.style.display="none";
+        }
+            }
+
+    </script>
+
+    </body>
+    </html>
+    
